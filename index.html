@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN AND SIGN UP class="google"PAGE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="card">
+        <div class="inner-box">
+          <div class="form login">
+            <div class="header">LOGIN</div>
+            <form action="#" id="login">
+              <div class="input">
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  name="password"
+                  placeholder="Password"
+                  id="login-password"
+                />
+              </div>
+              <button type="submit">LOGIN</button>
+              <div class="question" onclick="rotateForm('register')">
+                <p>Don't have an account?</p>
+              </div>
+              <button class="google">
+                <a href="http://localhost:8080/api/auth">SIGN IN WITH GOOGLE</a>
+              </button>
+            </form>
+          </div>
+          <div class="form signup">
+            <div class="header">SIGN UP</div>
+            <form action="" id="signup">
+              <div class="input">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Username"
+                  id="signup-username"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Email"
+                  id="signup-email"
+                />
+              </div>
+              <div class="input">
+                <input
+                  type="text"
+                  name="password"
+                  placeholder="Password"
+                  id="login-password"
+                />
+              </div>
+              <button type="submit">SUBMIT</button>
+              <div class="question" onclick="rotateForm('login')">
+                <p>I already have an account</p>
+              </div>
+              <button class="google">
+                <a href="http://localhost:8080/api/auth">SIGN UP WITH GOOGLE</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
