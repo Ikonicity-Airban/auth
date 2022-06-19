@@ -3,7 +3,7 @@ const card = document.querySelector(".inner-box");
 const signupForm = document.getElementById("signup");
 const loginForm = document.getElementById("login");
 
-const baseURL = "http://localhost:8080/api/e-commerce/v1";
+const baseURL = "https://api--v1.herokuapp.com/api/e-commerce/v1";
 function rotateForm(face) {
   face === "login"
     ? (card.style.transform = "rotateY(-180deg)")
